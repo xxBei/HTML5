@@ -1,0 +1,29 @@
+@charset "UTF-8";
+.transitionT{
+    /*margin: 0 auto;*/
+    width: 200px;
+    height: 200px;
+    border: solid #509bff 1px;
+    text-align:center;
+    line-height: 200px;
+}
+#box1{
+    /*
+        all表示鼠标悬浮全部的效果都显示过渡
+        1s表示过渡的时间
+        ease-in表示速度由慢到快/ease-out由快到慢/ease匀速
+        0s表示延迟多长时间在过渡
+    */
+    transition:all 2s ease 0.5s;
+}
+#box2{
+    transition: all 2s ease-in 0.5s;
+}
+#box3{
+    transition: all 2s ease-out 0.5s;
+}
+.transitionT:hover{
+    color: #ff7f82;
+    background-color: aquamarine;
+    transform: translate(800px,0) rotate(360deg) scale(0.6);
+}
