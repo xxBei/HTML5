@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.box{
+    margin-top: 50px;
+}
+#bianxing1{
+    width: 100px;
+    height: 100px;
+    background: #a7d5ff;
+    display: inline-block;
+    /*translate():平移*/
+    /*transform: translate(20px,20px);*/
+    /*transform:translateX(10px);*/
+    /*transform:translateY(20px);*/
+    /*简写模式,第一个值控制水平方向,第二值控制垂直方向*/
+    /*transform: translate(10px,10px);*/
+}
+#bianxing2{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: #a7d5ff;
+    margin-left:30px;
+    transition: 3s;
+    /*旋转,deg是角度*/
+    /*transform: rotate(20deg);*/
+    transform-origin: left bottom;
+    background-image: linear-gradient();
+}
+#bianxing3{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: #a7d5ff;
+    margin-left:30px;
+    /*缩放:大于1是放大,小于1是缩小*/
+    /*transform: scale(1.2);*/
+}
+#bianxing4{
+     width: 100px;
+     height: 100px;
+     display: inline-block;
+     background: #a7d5ff;
+     margin-left:30px;
+     /*缩放:大于1是放大,小于1是缩小*/
+     /*transform: scale(0.8);*/
+ }
+#bianxing5{
+     width: 100px;
+     height: 100px;
+     display: inline-block;
+     background: #a7d5ff;
+     margin-left:30px;
+     /*倾斜:第一个值控制X轴倾斜,第二个值控制Y轴倾斜*/
+     /*transform: skew(20deg,30deg);*/
+    /*动画*/
+    transition: 5s;
+ }
+#bianxing6{
+     width: 100px;
+     height: 100px;
+     display: inline-block;
+     background: #a7d5ff;
+     margin-left:30px;
+     /*倾斜:控制X轴倾斜*/
+     /*transform: skewX(20deg);*/
+     /*两种方式,都是控制X轴倾斜*/
+     /*transform:skew(20deg,0);*/
+ }
+#bianxing7{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background: #a7d5ff;
+    margin-left:30px;
+    /*倾斜:控制Y轴倾斜*/
+    /*transform: skewY(20deg);*/
+    /*两种方式,都是控制Y轴倾斜*/
+    /*transform:skew(0,20deg);*/
+}

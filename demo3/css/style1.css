@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+.jianbian1{
+    width: 400px;
+    height: 200px;
+    /*从绿色向蓝色渐变,渐变方向从右上到左下*/
+    background: linear-gradient(to left bottom,#8aff55, #5b9acc);
+}
+.jianbian2{
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    /*从绿色向蓝色渐变,渐变方向从下到上*/
+    background: linear-gradient(to top,#8aff55, #5b9acc);
+}
+.jianbian3{
+    width: 400px;
+    height: 200px;
+    margin-top: 20px;
+    /*从绿色向蓝色渐变,渐变方向从下到上*/
+    background: linear-gradient(to top left,#8aff55, #5b9acc, #cc6c67);
+}
+.jianbian4{
+    width: 400px;
+    height: 400px;
+    /*border-radius: 400px;*/
+    margin-top: 20px;
+    /*从红色到蓝色的渐变,从里到外渐变,默认是椭圆渐变*/
+    background: radial-gradient(#ff5886, #54e6ff);
+}
+.jianbian5{
+    width: 400px;
+    height: 400px;
+    /*border-radius: 400px;*/
+    margin-top: 20px;
+    /*从红色到蓝色的渐变,从里到外渐变*/
+    background: radial-gradient(at right,#ff5886, #54e6ff);
+}
+.jianbian6{
+    width: 400px;
+    height: 400px;
+    /*border-radius: 400px;*/
+    margin-top: 20px;
+    /*从红色到蓝色的渐变,从里到外渐变,这是圆形径向渐变*/
+    background: radial-gradient(circle at right,#ff5886, #54e6ff);
+}
+.jianbian7{
+    width: 400px;
+    height: 400px;
+    /*border-radius: 400px;*/
+    margin-top: 20px;
+    /*从红色到蓝色的渐变,从里到外渐变,这是圆形径向渐变*/
+    background: radial-gradient(circle,#ff5886, #54e6ff,#8aff55);
+}
