@@ -1,0 +1,37 @@
+@charset "UTF-8";
+#box{
+    width: 200px;
+    height: 200px;
+    border: solid 1px #85b7ff;
+    text-align: center;
+    line-height: 200px;
+    /*
+        myAnimation 是@keyframes 后面的名字
+        动画时间3s
+        缓冲速度ease-in:加速/ease-out:减速/ease匀速
+        延迟时间:0s
+        循环次数:2次 infinite:一直循环
+     */
+    animation: myAnimation 3s ease-in 0s 2 ;
+}
+@keyframes myAnimation {
+    0%,100%{
+        background-color: #fff;
+        margin-left: 0px;
+    }
+    50%{
+        background-color: deeppink;
+        margin-left: 600px;
+        transform: rotate(360deg) scale(0.4);
+
+    }
+    /* 同上*/
+    /*from{
+        background-color: #fff;
+        margin-left: 0px;
+    }
+    to{
+        background-color: deeppink;
+        margin-left: 200px;
+    }*/
+}
