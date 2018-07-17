@@ -1,0 +1,113 @@
+@charset "UTF-8";
+body,ul,li{
+    margin: 0px;
+    padding: 0;
+    list-style: none;
+    font-family: "宋体";
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+header{
+	background: url(../images/header_img.jpg) no-repeat center 0;
+    height: 120px;
+    width: 1349px;
+}
+.bgImg{
+    width: 1349px;
+    height: 120px;
+    display: block;
+    text-indent: -9999px;
+}
+
+nav{
+    width: 1349px;
+    height: 40px;
+    background-color: #333333;
+}
+.lastNav{
+    display: none;
+}
+nav ul li{
+    float: left;
+    font-size: 12px;
+}
+nav ul li{
+    line-height: 40px;
+}
+nav ul li a{
+    border-right: solid 1px #818181;
+    padding:0 10px;
+    color: #B0B0B0;
+}
+nav ul li:last-child a{
+    border: 0;
+}
+nav ul:nth-child(1){
+    float: left;
+}
+nav ul:nth-child(2){
+    float: right;
+}
+nav ul:nth-child(2) li:nth-last-child(2) a{
+    border: 0;
+}
+nav ul:nth-child(2) li:last-child a{
+    display: block;
+    background: #424242;
+    width: 100px;
+    text-align: center;
+    margin-right: 60px;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+nav ul:nth-child(2) li:last-child a:hover{
+    background: #fff;
+    color: #ff4d35;
+}
+
+/*响应式开始*/
+@media screen and (max-width: 375px){
+    header{
+        background: url(../images/header_img.jpg) no-repeat center 0;
+        background-size: 1251px 120px;
+        height: 120px;
+        width: 375px;
+    }
+    nav{
+        width: 375px;
+        display: none;
+    }
+    .lastNav{
+        display: block;
+        line-height: 40px;
+        color: #fff;
+    }
+    #menu{
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    #menu_li{
+        display: none;
+    }
+    #menu_li span{
+        display: block;
+        background: #333333;
+        /*padding-left: 20px;*/
+    }
+    #menu_li span a{
+        color: #fff;
+        display: block;
+        padding-left: 20px;
+        font-size: 14px;
+    }
+    #menu_li span a:hover{
+        background: #B0B0B0;
+        display: block;
+    }
+}
+
+
+/*响应式结束*/
