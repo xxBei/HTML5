@@ -1,6 +1,10 @@
 # HTML5和CSS3小例子
 > demo1 CSS3弹性盒子
 
+> demo2 CSS3响应式小案例
+- demo1.html是简单的响应式小案例
+- demo2.html是菜单简单测试小案例
+
 > demo3 CSS3渐变色和渐变色
 
 
