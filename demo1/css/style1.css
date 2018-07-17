@@ -1,0 +1,94 @@
+@charset "UTF-8";
+body,div{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    width: 100%;
+    height: 200px;
+    background-color: aquamarine;
+    /*将块元素变成弹性属性*/
+    display: flex;
+    /*弹性盒子水平居中*/
+    justify-content: center;
+    /*弹性盒子垂直居中*/
+    align-items: center;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: #ff8c87;
+    margin:10px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.wanmeiBox{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin: 20px auto;
+    background-color: #ffd794;
+}
+.wanmeiItem{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    background-color: #58ddff;
+    text-align: center;
+    line-height: 100px;
+}
+.alginSelf{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    margin:0 auto;
+    background-color: #ffd794;
+}
+.algiItem{
+    width: 100px;
+    min-height: 100px;
+    background-color: #58ddff;
+    text-align: center;
+    line-height: 100px;
+    margin:0 5px;
+}
+.item1{
+    align-self: flex-start;
+}
+.item2{
+    align-self: flex-end;
+}
+.item3{
+    align-self: center;
+}
+.item4{
+    align-self: baseline;
+}
+.item5{
+    align-self: stretch;
+}
+.flex{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    margin: 20px auto;
+    background-color: #ff71aa;
+}
+.flexItem{
+    width: 100px;
+    min-height: 100px;
+    background-color: #58ddff;
+    margin: 0 5px;
+    text-align: center;
+    line-height: 300px;
+}
+.one{
+    flex: 2;
+}
+.two{
+    flex: 1;
+}
+.three{
+    flex: 1;
+}
