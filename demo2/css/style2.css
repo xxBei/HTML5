@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body,ul,li{
-    margin: 0px;
+    margin: 0;
     padding: 0;
     list-style: none;
     font-family: "宋体";
@@ -12,17 +12,17 @@ a{
 header{
 	background: url(../images/header_img.jpg) no-repeat center 0;
     height: 120px;
-    width: 1349px;
+    width: 100%;
 }
 .bgImg{
-    width: 1349px;
+    width: 100%;
     height: 120px;
     display: block;
     text-indent: -9999px;
 }
 
 nav{
-    width: 1349px;
+    width: 100%;
     height: 40px;
     background-color: #333333;
 }
@@ -69,15 +69,15 @@ nav ul:nth-child(2) li:last-child a:hover{
 }
 
 /*响应式开始*/
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px ) {
     header{
         background: url(../images/header_img.jpg) no-repeat center 0;
-        background-size: 1251px 120px;
+        background-size: 1125px 120px;
         height: 120px;
-        width: 375px;
+        width: 100%;
     }
     nav{
-        width: 375px;
+        width: 100%;
         display: none;
     }
     .lastNav{
@@ -108,6 +108,4 @@ nav ul:nth-child(2) li:last-child a:hover{
         display: block;
     }
 }
-
-
 /*响应式结束*/

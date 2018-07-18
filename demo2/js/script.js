@@ -1,4 +1,11 @@
 var index = 0;
+
+window.onresize = function(){
+    var width = document.documentElement.clientWidth;
+    var widthT = document.getElementById("widthT");
+    widthT.innerHTML = width;
+};
+
 window.onload = function () {
     var menu = document.getElementById("menu");
     var menu_li = document.getElementById("menu_li");

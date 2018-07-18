@@ -1,0 +1,225 @@
+@charset "UTF-8";
+body,ul,li,aside{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "宋体";
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+header{
+    background: url(../images/header_img.jpg) no-repeat center 0;
+    height: 120px;
+    width: 100%;
+}
+.bgImg{
+    width: 100%;
+    height: 120px;
+    display: block;
+    text-indent: -9999px;
+}
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: #333333;
+}
+nav ul:last-child{
+    float: right;
+}
+nav ul li{
+    float: left;
+    font-size: 12px;
+    line-height: 40px;
+}
+nav ul li a{
+    border-right: solid 1px #818181;
+    padding:0 10px;
+    color: #B0B0B0;
+}
+nav ul li:last-child a{
+    border: 0;
+}
+nav ul:nth-child(1) li:nth-last-child(2) a{
+    border: 0;
+}
+nav ul:nth-child(1) li:last-child a{
+    display: block;
+    background: #424242;
+    width: 100px;
+    text-align: center;
+    margin-right: 60px;
+}
+nav ul li a:hover{
+    color: #fff;
+}
+nav ul:nth-child(1) li:last-child a:hover{
+    background: #fff;
+    color: #ff4d35;
+}
+#menu{
+    color: #fff;
+    line-height: 40px;
+    padding-left: 20px;
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+/*商品栏*/
+
+section{
+    width: 1288px;
+    margin: 10px auto 0;
+}
+aside div{
+    display: inline-block;
+    width: 316px;
+    height: 170px;
+
+}
+aside div a img{
+    width: 316px;
+    height: 170px;
+}
+/*商品第二栏*/
+.shopBox{
+    width: 1288px;
+    height: 180px;
+}
+.shop{
+    float: left;
+    width: 234px;
+    height: 290px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 0 0;
+    background: #fafafa;
+    border-top: solid #ff9d3a 1px;
+}
+.shop a img{
+    width: 160px;
+    height: 160px;
+}
+.shopBox .shop a p{
+    text-align: center;
+    font-size: 14px;
+}
+.shopBox .shop a p:nth-child(3){
+    font-size: 13px;
+    color: #a4a4a4;
+}
+.shopBox .shop a p span,.shopBox .shop a p del{
+    color: #f00;
+}
+
+
+
+
+
+/*响应式开始*/
+@media screen and (max-width: 1024px ) and (min-width: 792px){
+    nav{
+        position: relative;
+    }
+    #menu{
+        display: block;
+    }
+    .nav{
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    .menu_item{
+        width: 100%;
+        display: block;
+        background: #333333;
+    }
+    .menu_item a{
+        border: 0;
+        display: block;
+    }
+    .menu_item a:hover{
+        background: #919191;
+    }
+    .menu_item:last-child a:first-child{
+        background: #333;
+    }
+    .menu_item:last-child a:first-child:hover{
+        background: #919191;
+    }
+    nav ul:last-child{
+        display: none;
+    }
+    /*商品栏*/
+    section{
+        width: 766px;
+    }
+    aside{
+        width: 640px;
+        margin: 0 auto;
+    }
+    /*商品栏2*/
+    .shopBox{
+        width: 780px;
+    }
+    .shop{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 280px) and (max-width: 792px){
+    nav{
+        position: relative;
+    }
+    #menu{
+        display: block;
+    }
+    .nav{
+        width: 100%;
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+    }
+    .menu_item{
+        width: 100%;
+        display: block;
+        background: #333333;
+    }
+    .menu_item a{
+        border: 0;
+        display: block;
+    }
+    .menu_item a:hover{
+        background: #919191;
+    }
+    .menu_item:last-child a:first-child{
+        background: #333;
+    }
+    .menu_item:last-child a:first-child:hover{
+        background: #919191;
+    }
+    nav ul:last-child{
+        display: none;
+    }
+    /*商品栏*/
+    section{
+        width: 318px;
+    }
+    aside{
+        width: 318px;
+        margin: 0 auto;
+    }
+    /*商品栏2*/
+    .shopBox{
+        width: 250px;
+    }
+    .shop{
+        margin-bottom: 10px;
+    }
+}
+/*响应式结束*/
