@@ -4,6 +4,7 @@
 > demo2 CSS3响应式小案例
 - demo1.html是简单的响应式小案例
 - demo2.html是菜单简单测试小案例
+- demo3.html较完整的响应式案例
 
 > demo3 CSS3渐变色和渐变色
 
