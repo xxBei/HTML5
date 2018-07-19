@@ -1,0 +1,35 @@
+@charset "UTF-8";
+body{
+    margin: 0;
+    padding: 0;
+}
+.color{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 2px 5px;
+    cursor: pointer;
+    /*position: absolute;*/
+}
+.line{
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 2px 5px;
+    cursor: pointer;
+    border: solid 1px #858585;
+    text-align: center;
+    line-height: 30px;
+}
+#cav{
+    /*position: relative;*/
+}
+.red{
+    background-color: #ff442c;
+}
+.yellow{
+    background-color: #ffe12f;
+}
+.blue{
+    background-color: #6178ff;
+}
