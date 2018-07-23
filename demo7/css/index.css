@@ -33,3 +33,14 @@ body{
 .blue{
     background-color: #6178ff;
 }
+.shape{
+    width: 40px;
+    height: 40px;
+    border: solid #ccc 1px;
+    display: inline-block;
+    font-size: 11px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}

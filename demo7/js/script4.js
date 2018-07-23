@@ -7,7 +7,7 @@ ctx.beginPath();
         以(x, y)为圆心，以r为半径，从 startAngle弧度开始到endAngle弧度结束。
         anticlosewise是布尔值，true表示逆时针，false表示顺时针。(默认是顺时针)
 
- * Math.PI表示180度,Math.PI/2表示90度,2*Math.PI/2表示360度
+ * Math.PI表示180度,Math.PI/2表示90度,2*Math.PI表示360度
  */
 ctx.arc(80,80,60,0,Math.PI/2 ,false);
 ctx.closePath();
