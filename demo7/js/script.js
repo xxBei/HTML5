@@ -43,6 +43,7 @@ canvas.onmousedown = function (event) {
     var x1 =event .clientX;
     var y1 = event.clientY;
     arr += x1+","+y1+",";
+    canvas.addEventListener("mousemove",moveDraw);
 };
 canvas.onmouseup = function(event){
     var x2 = event.clientX;
@@ -56,6 +57,7 @@ canvas.onmouseup = function(event){
     }else if(index == 3){
         drawCircle();
     }
+    canvas.removeEventListener("mousemove",moveDraw);
 };
 
 function drawLine() {
@@ -92,3 +94,14 @@ function drawCircle(){
 reset.onclick = function () {//清空画板
     ctx.clearRect(0,0,width,height);
 };
+
+function moveDraw(event) {
+    var x = event.clientX;
+    var y = event.clientY-40;
+    ctx.beginPath();
+    ctx.lineWidth = line;
+    ctx.moveTo(x,y);
+    ctx.lineTo(x,y);
+    ctx.closePath();
+    ctx.stroke();
+}
